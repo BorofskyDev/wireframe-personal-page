@@ -11,6 +11,8 @@ const NavMenu = () => {
         className='absolute border-t py-10 border-zinc-950 top-16 left-0 bottom-0  w-screen flex flex-col text-center '
         initial='hidden'
         animate='visible'
+        exit='exit'
+        
       >
         <ul className='flex flex-col gap-8'>
           <li>

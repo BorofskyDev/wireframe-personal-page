@@ -15,6 +15,14 @@ const NavLink = ({ children, href }) => {
         // ease: 'easeInOut',
       },
     },
+    exit: {
+      opacity: 0,
+      y: 50,
+      transition: {
+        duration: 0.5,
+        // ease: 'easeInOut',
+      },
+    },
   }
 
   return (

@@ -1,4 +1,4 @@
-import NavLink from '../../../links/NavLink'
+import NavLink from "@/components/links/NavLink"
 
 const NavMenu = () => {
   return (

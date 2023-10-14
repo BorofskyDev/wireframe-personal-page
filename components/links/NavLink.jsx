@@ -26,10 +26,10 @@ const NavLink = ({ children, href }) => {
   }
 
   return (
-    <motion.li variants={listItemVariants} >
+    <motion.li variants={listItemVariants}>
       <Link
         href={href}
-        className='text-lg text-zinc-900 hover:text-blue-800 font-sans font-semibold hover:font-bold transition duration-200 ease-in-out active:text-blue-950 focus:text-blue-900 '
+        className='text-lg  text-zinc-900 hover:text-blue-800 font-sans font-semibold hover:font-bold transition duration-200 ease-in-out active:text-blue-950 focus:text-blue-900 '
       >
         {children}
       </Link>

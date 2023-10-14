@@ -8,25 +8,21 @@ const NavMenu = () => {
   return (
     <nav>
       <motion.div
-        className='absolute border-t py-10 border-zinc-950 top-16 left-0 bottom-0  w-screen flex flex-col text-center '
+        className='absolute md:static border-t py-10 md:py-0 border-zinc-950 top-16 left-0 bottom-0 w-screen md:w-auto flex flex-col md:flex-row text-center md:space-x-8'
         initial='hidden'
         animate='visible'
         exit='exit'
-        
       >
-        <ul className='flex flex-col gap-8'>
-          <li>
+        <ul className='flex flex-col md:flex-row gap-8 md:gap-0'>
+         
             <NavLink href='/'>Home</NavLink>
-          </li>
-          <li>
+          
             <NavLink href='/about'>About</NavLink>
-          </li>
-          <li>
+          
             <NavLink href='/projects'>Projects</NavLink>
-          </li>
-          <li>
+          
             <NavLink href='/posts'>Blog</NavLink>
-          </li>
+          
 
           <ContactButton href='#contact' />
         </ul>

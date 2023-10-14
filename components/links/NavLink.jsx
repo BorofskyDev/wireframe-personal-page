@@ -1,18 +1,31 @@
-import Link from "next/link"
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
-const NavLink = ({ children, href}) => {
+const NavLink = ({ children, href }) => {
+  const listItemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        // ease: 'easeInOut',
+      },
+    },
+  }
+
   return (
-    <Link href={href} 
-    className="bg-red-300">
-      {children}
+    <motion.li variants={listItemVariants} >
+      <Link
+        href={href}
+        className='text-lg text-zinc-900 hover:text-blue-800 font-sans font-semibold hover:font-bold transition duration-200 ease-in-out active:text-blue-950 focus:text-blue-900 '
+      >
+        {children}
       </Link>
-    // Add tailwind classes for styling
-    // Use your blue/indigo
-    // Add hover classes
-    // Add transition classes
-    // Add active classes
-    // Add focus classes
-
+    </motion.li>
   )
 }
 export default NavLink

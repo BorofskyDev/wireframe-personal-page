@@ -8,7 +8,7 @@ const NavMenu = () => {
   return (
     <nav>
       <motion.div
-        className='absolute md:static border-t py-10 md:py-0 border-zinc-950 top-16 left-0 bottom-0 w-screen md:w-auto flex flex-col md:flex-row text-center md:space-x-8'
+        className='bg-zinc-100/90 backdrop-blur-sm absolute md:static border-t py-10 md:py-0 border-zinc-950 top-16 left-0 bottom-0 w-screen md:w-auto flex flex-col md:flex-row text-center md:space-x-8'
         initial='hidden'
         animate='visible'
         exit='exit'

@@ -12,7 +12,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className='border-b md:border-none border-zinc-950 inline-grid grid-cols-6 w-screen md:flex md:flex-col'>
+    <header className='sticky border-b md:border-none border-zinc-950 inline-grid grid-cols-6 w-screen md:flex md:flex-col'>
       <Banner />
       <div className='grid place-content-center'>
       <NavBar />

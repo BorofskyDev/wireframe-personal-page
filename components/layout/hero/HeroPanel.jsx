@@ -5,6 +5,7 @@ const HeroPanel = () => {
   return (
     <section className="mt-6">
         <HeroStableContainer />
+        
     </section>
   )
 }

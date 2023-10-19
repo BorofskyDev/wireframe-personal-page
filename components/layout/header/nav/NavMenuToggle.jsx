@@ -8,15 +8,15 @@ const NavMenuToggle = ({ isMenuOpen, setIsMenuOpen}) => {
   return (
     <button
       onClick={handleMenuToggle}
-      className='flex flex-col items-center justify-between h-6 w-6 md:hidden'
+      className='flex flex-col items-center justify-around h-6 w-6 md:hidden'
     >
       <span
         className={`block bg-zinc-950 w-4 h-0.5  transition-all duration-300 
-        ${isMenuOpen ? 'rotate-45 translate-y-2.5 bg-blue-900' : ''}`}
+        ${isMenuOpen ? 'rotate-45 translate-y-1 bg-blue-900' : ''}`}
       ></span>
       <span
-        className={`block bg-zinc-950 w-4 h-0.5 transition-opacity duration-300 
-        ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}
+        className={`block bg-zinc-950 w-4 h-0.5 transition-all duration-300 
+        ${isMenuOpen ? 'opacity-0 -translate-x-6' : 'opacity-100'}`}
       ></span>
       <span
         className={`block bg-zinc-950 w-4 h-0.5 transition-all duration-300 
